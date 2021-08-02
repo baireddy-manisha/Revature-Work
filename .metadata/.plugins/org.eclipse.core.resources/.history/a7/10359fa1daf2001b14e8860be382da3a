@@ -1,0 +1,22 @@
+
+public class Lowercase {
+	public static void main(String args[])
+	{
+		String s="hello hi good noon";
+		System.out.println(convertToLowercase(s));
+		
+	}
+public static String convertToLowercase(String s)
+{
+	String arr[]=s.split("");
+	StringBuilder sb=new StringBuilder();
+	for(int a=0;a<arr.length;a++) 
+	{
+		int k=arr[a].length();
+		sb.append((arr[a].substring(0,k-1)));
+		
+	}
+
+	return sb.toString().trim();
+}
+}

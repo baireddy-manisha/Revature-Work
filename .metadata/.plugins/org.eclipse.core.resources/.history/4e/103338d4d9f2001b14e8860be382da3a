@@ -1,0 +1,19 @@
+
+public class Lowercase {
+	public static void main(String args[])
+	{
+		String s="hello hi good noon";
+		
+	}
+public static String convertToLowercase(String s)
+{
+	String arr[]=s.split("");
+	StringBuilder sb=new StringBuilder();
+	for(int a=0;a<arr.length;a++) {
+		sb.append(Character.toUpperCase(arr[a].charAt(a-1))).append(arr[a].substring(0,a-1)).append(" ");
+		
+	}
+
+	return sb.toString().trim();
+}
+}

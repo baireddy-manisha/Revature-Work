@@ -1,0 +1,38 @@
+package encapsulation;
+
+public class Train {
+	private int snum;
+	private String code;
+	private String Station;
+	private double Arrival;
+	private double Departure;
+	public Train(int snum,String code,String Station,double Arrival,double Departure) {
+		this.snum=snum;
+		this.code=code;
+		this.Station=Station;
+		this.Arrival=Arrival;
+		this.Departure=Departure;	
+	}
+	public void printStatement() {
+		System.out.printf("%d %10s %12s %10.2d %10.2d",snum,code,Station,Arrival,Departure);
+	}
+	public static void main(String args[]) {
+		System.out.println("yasvanthapur Delhi Sari Rohilla AC Duronto Express (12213)");
+		System.out.println();
+		System.out.println("--------------------------------------------");
+		System.out.println("#  code      station     Arr      Dep");
+		System.out.println("--------------------------------------------");
+
+		Train[] train = {
+				new Train(1,"YPR","Yasvantapur Jn",' ',23.40),
+				new Train(2,"GTL","Guntakal Jn",03.45, 03.50),
+				new Train(3,"SC","Secundrabad Jn",08.55,09.10),
+				new Train(4,"BPQ","Balharshah",13.30,13.35),
+				new Train(5,"HBJ","Habibganj",21.20,21.25),
+				new Train(6,"JHS","Jhansi Jn",01.15,01.20),
+				new Train(7,"DEE","Delhi SRohilla",07.00,' ')
+		};
+		
+	}
+}
+		

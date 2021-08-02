@@ -1,0 +1,9 @@
+package day2task;
+import java.util.canner;
+public class Primenumber {
+public static void main()
+{
+	scanner
+}
+
+}
