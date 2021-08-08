@@ -54,7 +54,7 @@ public class Product implements Comparable<Product> {
 			return quant;
 		}
 
-		public void setQuant(float rating) {
+		public void setQuant(float quant) {
 			this.quant = quant;
 		}
 
